@@ -2,3 +2,7 @@
   max-width: 550px;
   margin: auto;
 }
+
+body {
+  font-family: Poppins, sans-serif;
+}
