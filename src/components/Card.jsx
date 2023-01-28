@@ -16,16 +16,16 @@ export default function Card() {
           <img className="star" src={starUrl} alt="red star" />
           <div className="rating">5.0</div>
           <div className="greyed-out flex-row">
-            <div className="votes">(6)</div>
-            <div>&bull;</div>
-            <div className="country">USA</div>
+            <span className="votes">(6)</span>
+            <span>&bull;</span>
+            <span className="country">USA</span>
           </div>
         </div>
         <h2 className="card-header">Life lessons with Katie Zaferes</h2>
         <div className="price--container">
           <b>
-            From <i>$136</i>
-          </b>{" "}
+            From <span>$136</span>
+          </b>
           / person
         </div>
       </div>
