@@ -1,0 +1,52 @@
+.card {
+  position: relative;
+  max-width: 176px;
+  margin-top: 50px;
+}
+
+.status {
+  position: absolute;
+  color: #222222;
+  background-color: white;
+  width: 61px;
+  height: 20px;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  left: 8px;
+}
+
+.text--container > * {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.rating--container {
+  display: flex;
+  align-items: center;
+}
+
+.rating--container * {
+  margin-right: 4px;
+}
+
+.star {
+  height: 12px;
+}
+
+.greyed-out {
+  color: #918E9B;
+  vertical-align: middle;
+}
+
+.card-header {
+  color: #222222;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%;
+}
