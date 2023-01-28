@@ -1,5 +1,10 @@
 .navbar {
   height: 70px;
   padding: 22px 0 22px 30px;
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav--logo {
+  /* to prevent stratching in safari */
+  max-width: 100px;
 }
