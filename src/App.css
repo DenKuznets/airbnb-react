@@ -4,5 +4,9 @@
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  padding: 0 36px;
 }
