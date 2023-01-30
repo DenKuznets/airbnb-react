@@ -16,3 +16,10 @@ section {
   display: flex;
   flex-direction: row;
 }
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
