@@ -13,7 +13,7 @@ export default function Card(props) {
   return (
     <div className="card">
       <div className="img--container">
-        {(props.openSpots === 0 || badgeText) && (
+        {badgeText && (
           <div className="status">
             <p className="status--text">{badgeText }</p>
           </div>
