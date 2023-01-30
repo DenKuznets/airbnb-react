@@ -15,12 +15,12 @@ export default function Card(props) {
       <div className="img--container">
         {badgeText && (
           <div className="status">
-            <p className="status--text">{badgeText }</p>
+            <p className="status--text">{badgeText}</p>
           </div>
         )}
         <img
           className="avatar"
-          src={`../public/assets/${props.img}`}
+          src={`../public/assets/${props.coverImg}`}
           alt="avatar"
         />
       </div>
@@ -31,9 +31,9 @@ export default function Card(props) {
             src="../public/assets/star.png"
             alt="red star"
           />
-          <div className="rating">{props.rating}</div>
+          <div className="rating">{props.stats.rating}</div>
           <div className="greyed-out flex-row">
-            <span className="votes">({props.reviewCount})</span>
+            <span className="votes">({props.stats.reviewCount})</span>
             <span>&bull;</span>
             <span className="country">{props.location}</span>
           </div>
