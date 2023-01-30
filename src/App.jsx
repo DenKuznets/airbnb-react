@@ -6,8 +6,8 @@ import Card from "./components/Card";
 function App() {
   return (
     <div className="container">
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
+      <Navbar />
+      <Hero />
       <Card
         img="katie-zaferes.png"
         rating="5.0"
