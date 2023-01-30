@@ -7,25 +7,35 @@ export default function Card(props) {
   return (
     <div className="card">
       <div className="img--container">
-        <div className="status">
-          <p className="status--text">SOLD OUT</p>
-        </div>
-        <img className="avatar" src={`../public/assets/${props.img}`} alt="avatar" />
+        {props.openSpots === 0 && (
+          <div className="status">
+            <p className="status--text">SOLD OUT</p>
+          </div>
+        )}
+        <img
+          className="avatar"
+          src={`../public/assets/${props.img}`}
+          alt="avatar"
+        />
       </div>
       <div className="text--container">
         <div className="rating--container">
-          <img className="star" src='../public/assets/star.png' alt="red star" />
-          <div className="rating">{ props.rating }</div>
+          <img
+            className="star"
+            src="../public/assets/star.png"
+            alt="red star"
+          />
+          <div className="rating">{props.rating}</div>
           <div className="greyed-out flex-row">
-            <span className="votes">({ props.reviewCount })</span>
+            <span className="votes">({props.reviewCount})</span>
             <span>&bull;</span>
-            <span className="country">{ props.location}</span>
+            <span className="country">{props.location}</span>
           </div>
         </div>
-        <h2 className="card-header">{props.title }</h2>
+        <h2 className="card-header">{props.title}</h2>
         <div className="price--container">
           <b>
-            From <span>${props.price }</span>
+            From <span>${props.price}</span>
           </b>
           / person
         </div>
