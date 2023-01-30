@@ -2,7 +2,8 @@ import "./Card.css";
 import avatarUrl from "../assets/katie-zaferes.png";
 import starUrl from "../assets/star.png";
 
-export default function Card() {
+export default function Card(props) {
+  // console.log(props);
   return (
     <div className="card">
       <div className="img--container">
@@ -14,17 +15,17 @@ export default function Card() {
       <div className="text--container">
         <div className="rating--container">
           <img className="star" src={starUrl} alt="red star" />
-          <div className="rating">5.0</div>
+          <div className="rating">{ props.rating }</div>
           <div className="greyed-out flex-row">
-            <span className="votes">(6)</span>
+            <span className="votes">{ props.reviewCount }</span>
             <span>&bull;</span>
-            <span className="country">USA</span>
+            <span className="country">{ props.country}</span>
           </div>
         </div>
-        <h2 className="card-header">Life lessons with Katie Zaferes</h2>
+        <h2 className="card-header">{props.title }</h2>
         <div className="price--container">
           <b>
-            From <span>$136</span>
+            From <span>${props.price }</span>
           </b>
           / person
         </div>
