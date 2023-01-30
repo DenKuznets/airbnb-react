@@ -2,6 +2,7 @@
   position: relative;
   max-width: 176px;
   margin-top: 50px;
+  min-width: 176px;
 }
 
 .status {
